@@ -1,1 +1,402 @@
+/* Начало header */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: start;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 32px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.link__list-item {
+  list-style: none;
+}
+
+.link__list-item_no-bullit {
+  list-style: circle;
+}
+
+.link__list-item_no-bullit a {
+  color: black;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+
+.header__logo {
+    height: 105px;
+    width: 148px;
+}
+/* Не использовал
+
+.header__logo-image {
+}
+*/
+
+.address {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Raleway", sans-serif, serif;
+  margin-right: 28px;
+}
+
+.header__address {
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 206px;
+}
+
+.header__link {
+  color: black;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  line-height: 1.4;
+}
+
+/* Не использовал
+
+.header__link_active {
+
+}
+*/
+
+/* Начало header */
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Начало cover */
+
+.cover {
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  display: block;
+  width: 1100px;
+  height: 757px;
+  color: white;
+  position: relative;
+  z-index: 3;
+}
+
+.cover__title {
+  padding: 165px 50px 207px;
+  font-size: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  width: 1100px;
+  height: 757px;
+  letter-spacing: 30px;
+  gap: 25px;
+}
+
+.aligned-text_left {
+  display: block;
+  text-align: left;
+  position: relative;
+  margin-top: -2px;
+}
+
+.aligned-text_center {
+  display: block;
+  text-align: center;
+  margin-top: 17px;
+  margin-left: 29px;
+  position: relative;
+}
+
+.aligned-text_right {
+  display: block;
+  text-align: right;
+  margin-top: 19px;
+  margin-right: -31px;
+  position: relative;
+}
+
+.cover__description {
+  display: block;
+  margin-left: 50px;
+  margin-top: -89px;
+  font-size: 22px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+
+.span__spacing_more {
+  margin-left: 20px;
+}
+
+.span__spacing_less {
+  margin-left: 17px;
+}
+
+/*
+  .cover__description-text {
+
+  }
+*/
+
+.bet-button {
+  display: block;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: auto;
+  margin-right: 50px;
+  margin-top: -39px;
+  padding: 12px 32px 11px 31px;
+  font-family: "Raleway", sans-serif, serif;
+}
+
+.bet-button-link {
+  color: white;
+  text-decoration: none;
+}
+/* Конец cover */
+
+/* Начало lots */
+
+.lots {
+  margin-top: 180px;
+  margin-bottom: 118px;
+}
+
+.lots__heading {
+  margin-left: 64px;
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.lots__card-list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-link {
+  height: 100%;
+  text-decoration: underline;
+  color: white;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-transform: uppercase;
+}
+
+.card {
+  position: relative;
+  width: 334px;
+  min-height: 596px;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card__title {
+  position: relative;
+  height: 100%;
+  font-size: 22px;
+  display: flex;
+  margin: 48px 40px auto;
+  font-weight: 700;
+}
+
+.card__text {
+  color: white;
+  margin: auto 40px 48px;
+  font-size: 20px;
+}
+
+.lots__look-more-link {
+  color: black;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 64px;
+}
+
+/* Конец lots */
+
+/* Начало about */
+
+.about {
+  margin: auto 24px;
+  display: grid;
+  grid-template-columns: 334px auto;
+  gap: 24px;
+  height: 595px;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  width: 148px;
+  height: 114px;
+}
+
+.about__logo-image {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 50%;
+  height: 240px;
+  width: 240px;
+  margin-top: 35px;
+}
+
+.about__title {
+  margin: 136px 402px 100px auto;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 20px;
+  line-height: 24px;
+}
+
+/* Конец about */
+
+/* Начало footer */
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 180px;
+  height: 180px;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  max-width: 243px;
+}
+
+.footer__link {
+  color: black;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  line-height: 1.4;
+}
+
+/* Не использовал
+.footer__link_active {
+
+}
+*/
+
+.footer__menu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer__menu-list {
+  font-size: 18px;
+}
+
+/* Не искользовал
+.footer__menu-list-item {
+
+}
+*/
+
+.footer__menu-link {
+  color: black;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.footer__menu-link_active {
+  color: black;
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+}
+
+.footer__social-list-items {
+  display: flex;
+  gap: 48px;
+  margin-right: 50px;
+}
+
+/* Не использовал
+.footer__social-list-item {
+
+}
+
+.footer__social-link {
+
+}
+*/
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/* Конец footer */
 /* место для вашего кода */
