@@ -14,7 +14,7 @@
 
 .header__links-list {
   display: flex;
-  gap: 32px;
+  gap: 28px;
   font-size: 18px;
   font-weight: 400;
 }
@@ -25,6 +25,7 @@
 
 .link__list-item_no-bullit {
   list-style: circle;
+  padding-left: 4px;
 }
 
 .link__list-item_no-bullit a {
@@ -36,7 +37,7 @@
 
 .header__logo {
     height: 105px;
-    width: 148px;
+    width: 136px;
 }
 /* Не использовал
 
@@ -47,9 +48,9 @@
 .address {
   font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
-  font-family: "Raleway", sans-serif, serif;
-  margin-right: 28px;
+  line-height: 1.4;
+  font-family: Raleway, sans-serif, serif;
+  margin-right: 34px;
 }
 
 .header__address {
@@ -146,20 +147,15 @@
   position: relative;
 }
 
+/* Добавил два класса для того, чтобы в точности повторить макет*/
 
-.span__spacing_more {
-  margin-left: 20px;
-}
 
-.span__spacing_less {
-  margin-left: 17px;
-}
 
-/*
+
   .cover__description-text {
-
+    word-spacing: 18px;
   }
-*/
+
 
 .bet-button {
   display: block;
@@ -172,7 +168,7 @@
   margin-right: 50px;
   margin-top: -39px;
   padding: 12px 32px 11px 31px;
-  font-family: "Raleway", sans-serif, serif;
+  font-family: Raleway, sans-serif, serif;
 }
 
 /* Конец cover */
@@ -254,6 +250,8 @@
   color: white;
   margin: auto 40px 48px;
   font-size: 20px;
+  position: relative;
+  line-height: 1.2;
 }
 
 .lots__look-more-link {
@@ -280,8 +278,6 @@
 .about__logo {
   display: flex;
   justify-content: center;
-  width: 148px;
-  height: 114px;
 }
 
 .about__logo-image {
@@ -293,6 +289,11 @@
   height: 240px;
   width: 240px;
   margin-top: 35px;
+}
+
+.about__logo-image img {
+  height: 114px;
+  width: 148px;
 }
 
 .about__title {
@@ -307,7 +308,7 @@
   flex-direction: column;
   font-size: 20px;
   gap: 20px;
-  line-height: 24px;
+  line-height: 1.24;
 }
 
 /* Конец about */
@@ -366,6 +367,7 @@
 .footer__menu-link_active {
   color: black;
   text-decoration: none;
+  margin-top: 2px;
 }
 
 .footer__social-list {
@@ -377,7 +379,8 @@
 .footer__social-list-items {
   display: flex;
   gap: 48px;
-  margin-right: 50px;
+  margin-right: 52px;
+  margin-top: 2px;
 }
 
 /* Не использовал
