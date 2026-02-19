@@ -3,6 +3,12 @@
   flex-direction: column;
 }
 
+.text__decoration {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  color: inherit;
+}
+
 /* Начало header */
 
 .header {
@@ -29,41 +35,18 @@
   padding-left: 4px;
 }
 
-
-
 .list-item_active {
   list-style: none;
-  text-decoration: none;  
 }
-
-/*
 
 .header__link_list-item_active {
-
+  text-decoration: none;
 }
-
-
-.link__list-item_no-bullit {
-
-}
-
-.link__list-item_no-bullit a {
-  
-}
-
-*/
 
 .header__logo {
   height: 105px;
   width: 136px;
 }
-
-/* Не использовал
-
-.header__logo-image {
-}
-
-*/
 
 .address {
   font-size: 18px;
@@ -78,13 +61,6 @@
   align-items: flex-start;
   max-width: 206px;
 }
-
-/* Не использовал
-
-.header__address_link-active {
-
-}
-*/
 
 /* Начало header */
 
@@ -164,7 +140,6 @@
   word-spacing: 18px;
 }
 
-
 .bet-button {
   color: white;
   border: 1px solid white;
@@ -172,7 +147,7 @@
   font-size: 22px;
   text-transform: uppercase;
   padding: 12px 32px 11px 31px;
-  font-family: Raleway, sans-serif, serif; 
+  font-family: Raleway, sans-serif, serif;
 }
 
 /* Конец cover */
@@ -200,11 +175,6 @@
   margin-right: 24px;
 }
 
-
-.lots__card-list-item {
-
-}
-
 .card-link {
   height: 100%;
   color: white;
@@ -221,12 +191,10 @@
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-
 }
 
 .card_type_picture {
@@ -326,17 +294,6 @@
   max-width: 243px;
 }
 
-
-.footer__address_link {
-  line-height: 1.4;
-}
-
-/* Не использовал
-.footer__link_active {
-
-}
-*/
-
 .footer__menu {
   display: flex;
   justify-content: center;
@@ -348,18 +305,8 @@
   list-style: none;
 }
 
-/* Не искользовал
-.footer__menu-list-item {
-
-}
-*/
-
-.footer__menu-link {
-
-}
-
 .footer__menu-link_active {
-  color: black;
+  text-decoration: none;
   margin-top: 2px;
 }
 
@@ -373,13 +320,6 @@
   list-style: none;
 }
 
-
-/* Не использовал
-.footer__social-list-item {
-
-}
-*/
-
 .footer__social-link {
   display: block;
 }
@@ -390,4 +330,3 @@
 }
 
 /* Конец footer */
-/* место для вашего кода */
